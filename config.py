@@ -10,4 +10,4 @@ DEBUG = True
 
 
 # TODO IMPLEMENT DATABASE URL
-SQLALCHEMY_DATABASE_URI = 'postgres://172.0.0.2:5432/dbFyuur'
+SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:123456@localhost:5432/dbFyuur' #using docker postgreSQL container 

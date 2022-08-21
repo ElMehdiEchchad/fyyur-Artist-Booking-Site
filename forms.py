@@ -112,8 +112,8 @@ class VenueForm(Form):
     phone = StringField(
         'phone', validators=[DataRequired()]
     )
-    website = StringField(
-        'website', validators=[DataRequired(), URL(), Length(max=120)]
+    website_link = StringField(
+        'website_link', validators=[DataRequired(), URL(), Length(max=120)]
     )
     facebook_link = StringField(
         'facebook_link', validators=[DataRequired(), URL()]
@@ -166,8 +166,8 @@ class ArtistForm(Form):
     seeking_description = StringField(
         'seeking_description', validators=[Length(max=500)]
     )
-    website = StringField(
-        'website', validators=[DataRequired(), URL(), Length(max=120)]
+    website_link = StringField(
+        'website_link', validators=[DataRequired(), URL(), Length(max=120)]
     )
     image_link = StringField(
         'image_link', validators=[DataRequired(), URL(), Length(max=500)]

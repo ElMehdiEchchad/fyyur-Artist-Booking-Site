@@ -1,1 +1,334 @@
 
+2022-08-21 14:35:54,881 INFO: errors [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py:452]
+2022-08-21 14:36:11,870 INFO: errors [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py:452]
+2022-08-21 14:36:18,904 ERROR: Exception on /venues/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 135, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:36:21,620 ERROR: Exception on /artists/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 356, in create_artist_form
+    form = ArtistForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:36:44,344 ERROR: Exception on /venues [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 371, in __init__
+    self.__connect()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 665, in __connect
+    with util.safe_reraise():
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\default.py", line 597, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "172.0.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 61, in venues
+    venues = Venue.query.group_by(Venue.id, Venue.state, Venue.city).all()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\orm\query.py", line 2772, in all
+    return self._iter().all()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\orm\query.py", line 2907, in _iter
+    result = self.session.execute(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\orm\session.py", line 1711, in execute
+    conn = self._connection_for_bind(bind)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\orm\session.py", line 1552, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\orm\session.py", line 747, in _connection_for_bind
+    conn = bind.connect()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 3315, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 3394, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 3364, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 2198, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\base.py", line 3361, in _wrap_pool_connect
+    return fn()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 310, in connect
+    return _ConnectionFairy._checkout(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 868, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 476, in checkout
+    rec = pool._do_get()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\impl.py", line 145, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\impl.py", line 143, in _do_get
+    return self._create_connection()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 256, in _create_connection
+    return _ConnectionRecord(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 371, in __init__
+    self.__connect()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 665, in __connect
+    with util.safe_reraise():
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\pool\base.py", line 661, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\create.py", line 578, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\sqlalchemy\engine\default.py", line 597, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "172.0.0.2", port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-08-21 14:37:09,342 ERROR: Exception on /venues/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 135, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:37:19,148 INFO: errors [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py:452]
+2022-08-21 14:37:27,374 ERROR: Exception on /venues/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 135, in create_venue_form
+    form = VenueForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:37:29,570 ERROR: Exception on /shows/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 411, in create_shows
+    form = ShowForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:37:32,023 ERROR: Exception on /artists/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 356, in create_artist_form
+    form = ArtistForm()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.
+2022-08-21 14:37:57,093 ERROR: Exception on /venues/create [GET] [in C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py:1449]
+Traceback (most recent call last):
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\app.py", line 135, in create_venue_form
+    @app.route('/venues/create', methods=['POST'])
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 208, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 157, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\form.py", line 87, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 286, in __init__
+    self.process(formdata, obj, data=data, **kwargs)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\form.py", line 127, in process
+    field.process(formdata, data, extra_filters=field_extra_filters)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\wtforms\csrf\core.py", line 44, in process
+    self.current_token = self.csrf_impl.generate_csrf_token(self)
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 139, in generate_csrf_token
+    return generate_csrf(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 33, in generate_csrf
+    secret_key = _get_config(
+  File "C:\Users\LEGION\Desktop\cd0046-SQL-and-Data-Modeling-for-the-Web\env\lib\site-packages\flask_wtf\csrf.py", line 128, in _get_config
+    raise RuntimeError(message)
+RuntimeError: A secret key is required to use CSRF.

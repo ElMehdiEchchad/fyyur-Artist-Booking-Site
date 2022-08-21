@@ -29,11 +29,11 @@ class Venue(db.Model):
     facebook_link = db.Column(db.String(120))
     description = db.Column(db.String(500), default='')
     seeking_talent = db.Column(Boolean, default=False)
-    website = db.Column(String(120))
+    website_link = db.Column(String(120))
     genres = db.Column(ARRAY(String))
     shows = db.relationship('Show', backref='Venue', lazy='dynamic')
 
-    def __init__(self, name, genres, address, city, state, phone, website, facebook_link, image_link,
+    def __init__(self, name, genres, address, city, state, phone, website_link, facebook_link, image_link,
                  seeking_talent=False, description=""):
         self.name = name
         self.genres = genres
@@ -43,7 +43,7 @@ class Venue(db.Model):
         self.phone = phone
         self.image_link = image_link
         self.facebook_link = facebook_link
-        self.website = website
+        self.website_link = website_link
         self.description = description
 
     def insert(self):
@@ -80,7 +80,7 @@ class Venue(db.Model):
             'address' :self.address,
             'city' :self.city,
             'phone' :self.phone,
-            'website' :self.website,
+            'website_link' :self.website_link,
             'facebook_link':self.facebook_link,
             'seeking_talent' :self.seeking_talent,
             'description' :self.description,
@@ -108,19 +108,19 @@ class Artist(db.Model):
     facebook_link = db.Column(db.String(120))
     seeking_venue = db.Column(db.Boolean, default=False)
     seeking_description = db.Column(db.String(120), default=' ')
-    website = db.Column(db.String(120))
+    website_link = db.Column(db.String(120))
     shows = db.relationship('Show', backref='Artist', lazy=True)
 
     # TODO: implement any missing fields, as a database migration using Flask-Migrate
 
-    def __init__(self, name, genres, city, state, phone, image_link, website, facebook_link,
+    def __init__(self, name, genres, city, state, phone, image_link, website_link, facebook_link,
                  seeking_venue=False, seeking_description=""):
         self.name = name
         self.genres = genres
         self.city = city
         self.state = state
         self.phone = phone
-        self.website = website
+        self.website_link = website_link
         self.facebook_link = facebook_link
         self.seeking_description = seeking_description
         self.image_link = image_link
@@ -146,7 +146,7 @@ class Artist(db.Model):
             'city': self.city,
             'state':self.state,
             'phone': self.phone,
-            'website': self.website,
+            'website_link': self.website_link,
             'facebook_link': self.facebook_link,
             'seeking_venue': self.seeking_venue,
             'seeking_description': self.seeking_description,
